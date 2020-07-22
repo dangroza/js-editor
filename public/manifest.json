@@ -1,6 +1,6 @@
 {
-  "name": "prism-editor",
-  "short_name": "prism-editor",
+  "name": "js-editor",
+  "short_name": "js-editor",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",

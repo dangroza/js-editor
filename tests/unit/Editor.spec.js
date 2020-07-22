@@ -161,7 +161,7 @@ describe("Editor.vue", () => {
       }
     });
     const $pre = wrapper.find("pre");
-    const sentence = "vue-prism-editor";
+    const sentence = "js-editor";
 
     $pre.element.dispatchEvent(new KeyboardEvent("keyup", { keyCode: 86 })); // v
     $pre.element.dispatchEvent(new KeyboardEvent("keyup", { keyCode: 85 })); // u

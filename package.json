@@ -1,11 +1,11 @@
 {
-  "name": "vue-prism-editor",
+  "name": "js-editor",
   "version": "0.6.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:site": "vue-cli-service build --dest site",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build --target lib --name VuePrismEditor ./src/components/Editor.vue && rimraf dist/demo.html",
+    "build": "vue-cli-service build --target lib --name JsEditor ./src/components/Editor.vue && rimraf dist/demo.html",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:cov": "npm run lint && npm run test:unit -- --coverage",
     "publish-pkg": "npm run build && npm publish"
@@ -36,28 +36,28 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "unpkg": "dist/VuePrismEditor.umd.min.js",
-  "module": "dist/VuePrismEditor.common.js",
-  "main": "dist/VuePrismEditor.umd.js",
+  "unpkg": "dist/JsEditor.umd.min.js",
+  "module": "dist/JsEditor.common.js",
+  "main": "dist/JsEditor.umd.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koca/vue-prism-editor.git"
+    "url": "git+https://github.com/dangroza/js-editor.git"
   },
   "bugs": {
-    "url": "https://github.com/koca/vue-prism-editor/issues"
+    "url": "https://github.com/dangroza/js-editor/issues"
   },
-  "homepage": "https://github.com/koca/vue-prism-editor#readme",
+  "homepage": "https://github.com/dangroza/js-editor#readme",
   "license": "MIT",
   "keywords": [
     "vue",
     "editor",
     "code editor",
-    "prism"
+    "js"
   ],
-  "description": "A dead simple code editor with syntax highlighting and line numbers.",
+  "description": "Simple code editor with syntax highlighting and line numbers.",
   "author": {
-    "name": "Mesut Koca",
-    "email": "imesutkoca@gmail.com"
+    "name": "Dan Groza",
+    "email": "dan.groza@gmail.com"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

@@ -3,10 +3,9 @@
     <header class="header bg-white">
       <div class="hero py-8 sm:pt-24 text-center">
         <div class="hero-text font-mono text-xl w-64 sm:w-full mx-auto">
-          <h1 class="text-2xl">Vue Prism Code Editor</h1>
+          <h1 class="text-2xl">Vue Js Code Editor</h1>
           <h3 class="font-normal text-xl mt-4">
-            A dead simple code editor with syntax highlighting and line numbers.
-            7kb/gz
+            A simple js editor with syntax highlighting and line numbers.
           </h3>
         </div>
         <div class="hero-options my-8 w-64 max-w-sm sm:w-full mx-auto">
@@ -18,10 +17,6 @@
             <input type="checkbox" name="ln" v-model="readonly" />
             Readonly
           </label>
-        </div>
-        <div class="hero-info">
-          Documentation on
-          <a href="https://github.com/koca/vue-prism-editor">Github</a>
         </div>
       </div>
     </header>
@@ -38,7 +33,6 @@
 </template>
 
 <script>
-/* global Prism */
 import "prismjs";
 import "./assets/editorstyle.css";
 // import "prismjs/themes/prism-tomorrow.css";
@@ -71,10 +65,7 @@ export default {
   color: #2ecc71
 }
 </style>` /* eslint-enable */
-  }),
-  mounted() {
-    console.log(Prism);
-  }
+  })
 };
 </script>
 

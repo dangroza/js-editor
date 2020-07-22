@@ -1,26 +1,7 @@
-# Vue Prism Editor
-
-<p align="center">
+# Js Editor
 
 
-![version](https://img.shields.io/npm/v/vue-prism-editor.svg)
-![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/vue-prism-editor.svg)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/koca/vue-prism-editor)
-[![CircleCI branch](https://circleci.com/gh/koca/vue-prism-editor/tree/master.svg?style=shield)](https://circleci.com/gh/koca/vue-prism-editor/tree/master)
-<!-- ![Codecov](https://img.shields.io/codecov/c/github/koca/vue-prism-editor.svg) -->
-
-</p>
-
-> A dead simple code editor with syntax highlighting and line numbers. 7kb/gz
-
-## Demo
-
-[prism-editor.netlify.com](https://prism-editor.netlify.com/)
-
-## Examples
-  
- * Codesandbox: [https://codesandbox.io/s/61yrlnlnmn](https://codesandbox.io/s/61yrlnlnmn)
- * Codepen: [https://codepen.io/koca/pen/QVgqyR](https://codepen.io/koca/pen/QVgqyR)
+> Simple js editor with syntax highlighting and line numbers.
 
 ## Features
 
@@ -42,13 +23,13 @@ The goal of this project is to have a simple code editor. You can use to make sm
 ## Install
 
 ```sh
-npm install vue-prism-editor
+npm install js-editor
 ```
 
 or
 
 ```sh
-yarn add vue-prism-editor
+yarn add js-editor
 ```
 
 ## Usage
@@ -57,42 +38,16 @@ Register the component locally and use it (recommended)
 
 ```html
 <template>
-  <prism-editor :code="code" language="js"></prism-editor>
+  <js-editor :code="code" language="js"></js-editor>
 </template>
 
 <script>
-import PrismEditor from 'vue-prism-editor'
+import JsEditor from 'js-editor'
 export default {
   components: {
-    PrismEditor
+    JsEditor
   }
 }
-</script>
-```
-
-Or register the component globally in `main.js`
-
-```js
-import VuePrismEditor from "vue-prism-editor";
-import "vue-prism-editor/dist/VuePrismEditor.css"; // import the styles
-Vue.component("prism-editor", VuePrismEditor);
-```
-
-Browser usage:
-
-```html
-<!-- vue-prism-editor JavaScript -->
-<script src="https://unpkg.com/vue-prism-editor"></script>
-
-<!-- vue-prism-editor CSS -->
-<link rel="stylesheet" href="https://unpkg.com/vue-prism-editor/dist/VuePrismEditor.css">
-
-<!-- use -->
-<script>
-Vue.component('vue-prism-editor', VuePrismEditor)
-new Vue({
-    el: '#app'
-})
 </script>
 ```
 
@@ -119,7 +74,7 @@ OR:
 | -------------------- | --------- | ------- | ------------------------------------ | ----------------------------------------------------- |
 | v-model              | `string`  | -       | -                                    | for the `code` prop below                             |
 | code                 | `string`  | `""`    | -                                    | the code                                              |
-| language             | `String`  | `"js"`  | `vue,html,md,ts` + Prismjs Languages | language of the code                                  |
+| language             | `String`  | `"js"`  | `vue,html,md,ts` + Js Languages | language of the code                                  |
 | lineNumbers          | `Boolean` | `false` | -                                    | Whether to show line numbers or not                   |
 | readonly             | `Boolean` | `false` | -                                    | Indicates if the editor is read only or not.          |
 | emitEvents           | `Boolean` | `false` | -                                    | Indicates if the editor should emit events.           |
