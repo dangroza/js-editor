@@ -1,6 +1,6 @@
 {
   "name": "js-editor",
-  "short_name": "js-editor",
+  "short_name": "vue-js-editor",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",

@@ -1,5 +1,5 @@
 {
-  "name": "js-editor",
+  "name": "vue-js-editor",
   "version": "0.6.1",
   "scripts": {
     "serve": "vue-cli-service serve",

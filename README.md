@@ -23,13 +23,13 @@ The goal of this project is to have a simple code editor. You can use to make sm
 ## Install
 
 ```sh
-npm install js-editor
+npm install vue-js-editor
 ```
 
 or
 
 ```sh
-yarn add js-editor
+yarn add vue-js-editor
 ```
 
 ## Usage
@@ -38,11 +38,11 @@ Register the component locally and use it (recommended)
 
 ```html
 <template>
-  <js-editor :code="code" language="js"></js-editor>
+  <vue-js-editor :code="code" language="js"></vue-js-editor>
 </template>
 
 <script>
-import JsEditor from 'js-editor'
+import VueJsEditor from 'vue-js-editor'
 export default {
   components: {
     JsEditor
