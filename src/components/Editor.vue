@@ -1,19 +1,19 @@
 <template>
-  <div class="prism-editor-wrapper">
+  <div class="js-editor-wrapper">
     <div
-      class="prism-editor__line-numbers"
+      class="js-editor__line-numbers"
       aria-hidden="true"
       v-if="lineNumbers"
       :style="{ 'min-height': lineNumbersHeight }"
     >
       <div
-        class="prism-editor__line-width-calc"
+        class="js-editor__line-width-calc"
         style="height: 0px; visibility: hidden; pointer-events: none;"
       >
         999
       </div>
       <div
-        class="prism-editor__line-number token comment"
+        class="js-editor__line-number token comment"
         v-for="line in lineNumbersCount"
         :key="line"
       >
@@ -21,7 +21,7 @@
       </div>
     </div>
     <pre
-      class="prism-editor__code"
+      class="js-editor__code"
       :class="{ ['language-' + language]: true }"
       ref="pre"
       v-html="content"
@@ -181,9 +181,7 @@ export default {
       if (!this.lineNumbers || !this.autoStyleLineNumbers) return;
 
       const $editor = this.$refs.pre;
-      const $lineNumbers = this.$el.querySelector(
-        ".prism-editor__line-numbers"
-      );
+      const $lineNumbers = this.$el.querySelector(".js-editor__line-numbers");
       const editorStyles = window.getComputedStyle($editor);
 
       this.$nextTick(() => {
@@ -384,11 +382,11 @@ export default {
 </script>
 
 <style>
-.prism-editor-wrapper code {
+.js-editor-wrapper code {
   font-family: inherit;
   line-height: inherit;
 }
-.prism-editor-wrapper {
+.js-editor-wrapper {
   /* position: absolute; */
   width: 100%;
   height: 100%;
@@ -398,20 +396,20 @@ export default {
   tab-size: 1.5em;
   -moz-tab-size: 1.5em;
 }
-.prism-editor__line-numbers {
+.js-editor__line-numbers {
   height: 100%;
   overflow: hidden;
   flex-shrink: 0;
   padding-top: 4px;
   margin-top: 0;
 }
-.prism-editor__line-number {
+.js-editor__line-number {
   /* padding: 0 3px 0 5px; */
   text-align: right;
   white-space: nowrap;
 }
 
-.prism-editor__code {
+.js-editor__code {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   flex-grow: 2;
@@ -422,7 +420,7 @@ export default {
   -moz-tab-size: 4;
   outline: none;
 }
-pre.prism-editor__code:focus {
+pre.js-editor__code:focus {
   outline: none;
 }
 </style>

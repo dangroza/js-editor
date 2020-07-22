@@ -1,7 +1,7 @@
 .my-editor {
   background-color: #fafafa;
 }
-.prism-editor__code {
+.js-editor__code {
   margin-left: 8px;
   font-family: "Fira code", "Fira Mono", Consolas, Menlo, Courier, monospace;
   font-variant-ligatures: common-ligatures;
